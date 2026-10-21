@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-plum-950: #14071F;
+  --color-plum-900: #1F0B2E;
+  --color-plum-850: #290F3B;
+  --color-plum-800: #35144A;
+  --color-plum-700: #4A1A64;
+  --color-plum-600: #62227F;
+  --color-plum-500: #81319F;
+
+  --color-lilac-100: #F7F1FA;
+  --color-lilac-200: #EFE4F4;
+  --color-lilac-300: #DEC7E7;
+  --color-lilac-400: #C7A5D4;
+
+  --color-badge-yellow: #FACC15;
+  --color-badge-yellow-light: #FEF08A;
+  --color-badge-yellow-dark: #CA8A04;
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  --bg-primary: #1C0A2A;
+  --bg-surface: #270F38;
+  --accent-yellow: #FACC15;
+  --accent-lilac: #DEC7E7;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #170724;
+  background-image: radial-gradient(circle at 50% 30%, #3F1754 0%, #200B30 55%, #14061F 100%);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+}
+
+code, .font-mono {
+  font-family: var(--font-mono);
+}
+
+.glass-panel {
+  background: rgba(36, 14, 52, 0.85);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.03) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+}
+
+.glass-pill {
+  background: rgba(38, 14, 56, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.badge-yellow {
+  background: rgba(250, 204, 21, 0.18);
+  color: #FDE047;
+  border: 1px solid rgba(250, 204, 21, 0.45);
+}
+
+.badge-yellow-solid {
+  background: #FACC15;
+  color: #1F0B2E;
+  font-weight: 700;
+  box-shadow: 0 0 14px rgba(250, 204, 21, 0.35);
+}
+
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible {
+  outline: 2px solid #FACC15;
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(250, 204, 21, 0.45);
+}

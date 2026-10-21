@@ -1,0 +1,6 @@
+{
+  "name": "EdgeTrack - Smart Campus Resource Tracking",
+  "description": "Smart Campus Resource Tracking system powered by edge nodes, interactive campus command centre, and real-time telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
